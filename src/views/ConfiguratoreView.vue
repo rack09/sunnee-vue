@@ -58,9 +58,9 @@ function invia() {
 </script>
 
 <template>
-  <main class="container py-5">
-    <div class="row g-5 align-items-center">
-      <div class="col-12 col-md-6">
+ <main class="container py-4 py-md-5">
+  <div class="row g-4 align-items-start">
+    <div class="col-12 col-md-6 order-2 order-md-1">
         <h1 class="fw-bold">
           Personalizza la tua bottiglia
         </h1>
@@ -113,7 +113,7 @@ function invia() {
         </RouterLink>
       </div>
 
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6 order-1 order-md-2 anteprima-fissa">
         <AnteprimaBottiglia
           :colore-tappo="coloriBottiglia.tappo"
           :colore-corpo="coloriBottiglia.corpo"
@@ -123,3 +123,22 @@ function invia() {
     </div>
   </main>
 </template>
+
+<style scoped>
+.anteprima-fissa {
+  position: sticky;
+  top: 1rem;
+  align-self: flex-start;
+}
+
+@media (max-width: 767.98px) {
+  .anteprima-fissa {
+    top: 0;
+    z-index: 2;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 8%);
+  }
+}
+</style>

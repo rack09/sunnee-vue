@@ -29,7 +29,7 @@ defineProps({
       ></div>
     </div>
 
-    <figcaption class="text-body-secondary mt-3">
+    <figcaption class="text-body-secondary small mt-2 mt-md-3">
       Anteprima della tua bottiglia
     </figcaption>
   </figure>
@@ -62,5 +62,27 @@ defineProps({
 .corpo,
 .fondo {
   box-shadow: inset -10px 0 0 rgb(0 0 0 / 10%);
+}
+
+@media (max-width: 767.98px), (max-height: 600px) {
+  .bottiglia {
+    width: 80px;
+  }
+
+  .tappo {
+    width: 38px;
+    height: 19px;
+    border-radius: 6px 6px 2px 2px;
+  }
+
+  .corpo {
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .fondo {
+    height: 15px;
+    border-radius: 0 0 12px 12px;
+  }
 }
 </style>
