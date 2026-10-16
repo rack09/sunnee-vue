@@ -11,7 +11,6 @@ Un configuratore interattivo realizzato per il progetto **Vue.js 2 di start2impa
 
 - **[Demo live](https://melvinrosales.com/sunnee-vue/#/)**
 - **[Repository GitHub](https://github.com/rack09/sunnee-vue)**
-- **[Presentazione PDF](docs/Progetto_Vuejs_2_di_Melvin_Rosales.pdf)**
 
 ## 🎯 Il progetto
 
@@ -118,38 +117,6 @@ npm run preview
 
 Il primo comando genera i file di produzione nella cartella `dist`; il secondo permette di controllarli con un server locale.
 
-## 🌐 Pubblicazione in una sottocartella
-
-La demo è disponibile su **[melvinrosales.com/sunnee-vue/#/](https://melvinrosales.com/sunnee-vue/#/)**.
-
-Per rigenerare la build destinata alla sottocartella `/sunnee-vue/`, impostare questa proprietà in `vite.config.js`, conservando gli altri campi:
-
-```javascript
-base: '/sunnee-vue/',
-```
-
-Il router usa già questa impostazione:
-
-```javascript
-history: createWebHashHistory(import.meta.env.BASE_URL)
-```
-
-Dopo aver impostato `base`, eseguire nuovamente `npm run build` e caricare il **contenuto** di `dist` nella sottocartella `sunnee-vue` del dominio. `index.html` deve trovarsi direttamente in quella cartella.
-
-La rotta del configuratore è `/sunnee-vue/#/configuratore`; quella di ringraziamento è `/sunnee-vue/#/grazie`.
-
-Il modo hash permette al router di gestire la parte dopo `#` nel browser. La proprietà `base` permette a Vite di generare le corrette posizioni dei file statici.
-
-## ✅ Controlli prima della consegna
-
-- Eseguire `npm run build`.
-- Scegliere colori diversi per tappo, corpo e fondo.
-- Tornare indietro e controllare sia l'anteprima sia il colore evidenziato.
-- Verificare il passaggio alla pagina di ringraziamento con **Invia**.
-- Controllare che su mobile l'anteprima rimanga visibile durante la selezione.
-- Controllare l'uso dei pulsanti con la tastiera.
-
-Il progetto non include uno script `npm test`: i comandi disponibili sono `dev`, `build` e `preview`.
 
 ## 👤 Autore
 
