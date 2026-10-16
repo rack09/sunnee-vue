@@ -1,6 +1,6 @@
 # 🌊 Sunnee Kids — Configuratore bottiglia
 
-Un configuratore interattivo realizzato per il progetto **Vue.js 2 di start2impact**. L'utente personalizza una bottiglia termica scegliendo il colore del tappo, del corpo e del fondo attraverso tre passaggi.
+Un configuratore interattivo realizzato per il progetto **Sunnee**. L'utente personalizza una bottiglia termica scegliendo il colore del tappo, del corpo e del fondo attraverso tre passaggi.
 
 ![Vue 3](https://img.shields.io/badge/Vue-3-42b883?logo=vuedotjs&logoColor=white)
 ![Vue Router 5](https://img.shields.io/badge/Vue_Router-5-35495e)
